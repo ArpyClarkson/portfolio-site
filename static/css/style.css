@@ -1,0 +1,36 @@
+body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+nav { background: #222; color: #fff; padding: 1em; }
+nav a { color: #fff; margin-right: 1em; text-decoration: none; }
+main { padding: 2em; }
+/* Example: Custom underline for active nav link */
+nav a.active {
+    border-bottom: 2px solid #facc15; /* Tailwind yellow-300 */
+}
+
+/* Example: Custom focus ring for accessibility */
+a:focus {
+    outline: 2px solid #facc15;
+    outline-offset: 2px;
+}
+
+/* Example: Custom font for headings */
+h1, h2, h3 {
+    font-family: 'Segoe UI', 'Arial', sans-serif;
+    letter-spacing: 0.01em;
+}
+
+/* Example: Slightly rounded corners for main content */
+main {
+    border-radius: 0.5rem;
+}
+
+/* Example: Custom shadow for main content */
+main {
+    box-shadow: 0 2px 8px rgba(31, 41, 55, 0.08);
+}
+
+/* Example: Custom color for footer links */
+footer a {
+    color: #facc15;
+    text-decoration: underline;
+}
