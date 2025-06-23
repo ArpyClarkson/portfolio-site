@@ -1,6 +1,48 @@
 {% extends "base.html" %}
 {% block title %}Projects - Portfolio{% endblock %}
 {% block content %}
-<h1 class="text-3xl font-bold mb-4">Projects</h1>
-<p class="text-lg">Here you'll find a selection of my recent work and personal projects.</p>
+<section class="max-w-4xl mx-auto">
+    <h1 class="text-4xl font-extrabold text-gray-100 mb-8 text-center">Projects</h1>
+    <p class="text-lg text-gray-300 mb-10 text-center">
+        Here you'll find a selection of my recent work and personal projects.<br>
+        Each project blends clean code, thoughtful design, and a passion for technology.
+    </p>
+    <div class="grid gap-8 md:grid-cols-2">
+        <!-- Project Card Example -->
+        <div class="bg-gray-900/80 rounded-xl shadow-lg p-6 flex flex-col hover:scale-[1.025] transition-transform">
+            <img src="{{ url_for('static', filename='img/portfolio-preview.png') }}" alt="Portfolio Website Preview"
+                 class="h-40 w-auto max-w-full object-contain mx-auto mb-4 border border-gray-800 rounded-lg">
+            <h2 class="text-2xl font-bold text-yellow-300 mb-2">Personal Portfolio Website</h2>
+            <p class="text-gray-300 mb-4">
+                A modern, AI-integrated portfolio built with <span class="text-yellow-200 font-semibold">Python</span>, <span class="text-yellow-200 font-semibold">Flask</span>, and <span class="text-yellow-200 font-semibold">Tailwind CSS</span>. This site showcases my projects, skills, and approach to blending human creativity with artificial intelligence for elegant, future-ready solutions.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-gray-800 text-yellow-200 text-xs px-3 py-1 rounded-full">Python</span>
+                <span class="inline-block bg-gray-800 text-yellow-200 text-xs px-3 py-1 rounded-full">Flask</span>
+                <span class="inline-block bg-gray-800 text-yellow-200 text-xs px-3 py-1 rounded-full">Tailwind CSS</span>
+                <span class="inline-block bg-gray-800 text-yellow-200 text-xs px-3 py-1 rounded-full">AI Integration</span>
+            </div>
+            <a href="https://github.com/ArpyClarkson/portfolio-site" class="text-yellow-400 hover:underline font-semibold mt-auto" target="_blank">View on GitHub &rarr;</a>
+        </div>
+        <div class="bg-gray-900/80 rounded-xl shadow-lg p-6 flex flex-col hover:scale-[1.025] transition-transform">
+            <img src="{{ url_for('static', filename='img/dicerollerpy-preview.png') }}" alt="DiceRollerPy Preview"
+                 class="h-40 w-auto max-w-full object-contain mx-auto mb-4 border border-gray-800 rounded-lg">
+            <h2 class="text-2xl font-bold text-yellow-300 mb-2">DiceRollerPy</h2>
+            <p class="text-gray-300 mb-4">
+                <span class="text-yellow-200 font-semibold">DiceRollerPy</span> is a lightweight Python dice roller application, thoughtfully crafted using AI-assisted prompts to ensure clarity, simplicity, and reliability. By leveraging AI throughout the development process, I was able to rapidly prototype, refine, and optimize the code for both usability and performance.
+            </p>
+            <p class="text-gray-300 mb-4">
+                This project demonstrates how <span class="text-yellow-200 font-semibold">AI-driven workflows</span> can accelerate development and inspire creative solutions, even for focused, utility-driven tools. DiceRollerPy is ideal for tabletop gamers, developers, or anyone needing quick, flexible dice rolls in Python.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-gray-800 text-yellow-200 text-xs px-3 py-1 rounded-full">Python</span>
+                <span class="inline-block bg-gray-800 text-yellow-200 text-xs px-3 py-1 rounded-full">AI Prompts</span>
+                <span class="inline-block bg-gray-800 text-yellow-200 text-xs px-3 py-1 rounded-full">CLI</span>
+                <span class="inline-block bg-gray-800 text-yellow-200 text-xs px-3 py-1 rounded-full">Utility</span>
+            </div>
+            <a href="https://github.com/ArpyClarkson/dicerollerpy" class="text-yellow-400 hover:underline font-semibold mt-auto" target="_blank">View on GitHub &rarr;</a>
+        </div>
+        <!-- Add more project cards as needed -->
+    </div>
+</section>
 {% endblock %}

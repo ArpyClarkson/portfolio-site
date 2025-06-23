@@ -1,6 +1,49 @@
 {% extends "base.html" %}
 {% block title %}About - Portfolio{% endblock %}
 {% block content %}
-<h1 class="text-3xl font-bold mb-4">About Me</h1>
-<p class="text-lg">I'm a passionate developer eager to build and learn. More details about my background and skills will go here.</p>
+<section class="max-w-3xl mx-auto bg-gray-900/80 rounded-xl shadow-lg p-8 mt-8">
+    <div class="flex flex-col md:flex-row items-center gap-8">
+        <img src="{{ url_for('static', filename='img/avatar.png') }}" alt="Profile Photo"
+             class="w-32 h-32 rounded-full shadow-md border-4 border-yellow-400 object-cover mb-4 md:mb-0"
+             onerror="this.style.display='none'">
+        <div>
+            <h1 class="text-4xl font-extrabold text-gray-100 mb-2 tracking-tight">About Me</h1>
+            <h2 class="text-xl font-semibold text-yellow-400 mb-4">Passionate Developer &amp; Creative Thinker</h2>
+            <p class="text-gray-300 leading-relaxed mb-4">
+                Hello! I'm <span class="font-semibold text-yellow-300">Andrew Langel</span>, a developer who loves crafting clean, modern web experiences.
+                My work blends technical skill with a keen eye for design, always striving for both usability and beauty.
+            </p>
+            <div class="flex flex-wrap gap-2 mb-4">
+                <span class="inline-block bg-gray-800 text-yellow-200 text-xs px-3 py-1 rounded-full">Python</span>
+                <span class="inline-block bg-gray-800 text-yellow-200 text-xs px-3 py-1 rounded-full">Flask</span>
+                <span class="inline-block bg-gray-800 text-yellow-200 text-xs px-3 py-1 rounded-full">Tailwind CSS</span>
+                <span class="inline-block bg-gray-800 text-yellow-200 text-xs px-3 py-1 rounded-full">JavaScript</span>
+                <span class="inline-block bg-gray-800 text-yellow-200 text-xs px-3 py-1 rounded-full">UI/UX</span>
+            </div>
+            <p class="text-gray-400 italic">
+                “Simplicity is the ultimate sophistication.” – Leonardo da Vinci
+            </p>
+        </div>
+    </div>
+    <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="bg-gray-800/80 rounded-lg p-6 shadow-inner">
+            <h3 class="text-lg font-semibold text-yellow-300 mb-2">What I Do</h3>
+            <ul class="list-disc list-inside text-gray-300 space-y-1">
+                <li>Build responsive, accessible web apps</li>
+                <li>Design minimalist, user-focused interfaces</li>
+                <li>Automate workflows and data tasks</li>
+                <li>Collaborate and communicate with teams</li>
+            </ul>
+        </div>
+        <div class="bg-gray-800/80 rounded-lg p-6 shadow-inner">
+            <h3 class="text-lg font-semibold text-yellow-300 mb-2">Interests</h3>
+            <ul class="list-disc list-inside text-gray-300 space-y-1">
+                <li>Modern web technologies</li>
+                <li>Open source & community</li>
+                <li>Digital art & design</li>
+                <li>Learning new things</li>
+            </ul>
+        </div>
+    </div>
+</section>
 {% endblock %}

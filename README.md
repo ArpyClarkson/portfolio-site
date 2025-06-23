@@ -1,37 +1,23 @@
 # Minimalist Portfolio Website
 
-A simple, minimalist portfolio website built with [Flask](https://flask.palletsprojects.com/) and ready to be hosted on Linux.
+A clean and minimalist personal portfolio website built with [Python](https://www.python.org/) and [Flask](https://flask.palletsprojects.com/).  
+This project is designed for easy deployment on Linux servers and is ready for customization to showcase your work, skills, and contact information.
 
 ## Features
 
-- Clean, minimalist design
-- Built with Python and Flask
-- Easy to deploy on any Linux server
-- Ready for customization
+- Responsive design using [Tailwind CSS](https://tailwindcss.com/) (via CDN)
+- Modular structure with Flask and Jinja2 templates
+- Organized static assets for CSS and JavaScript
+- Simple navigation: Home, Projects, About, Contact
+- Ready-to-use with Python virtual environments
+- Production-ready with [Gunicorn](https://gunicorn.org/) support
 
-## Getting Started
+## Technologies Used
 
-1. **Clone the repository**
-   ```sh
-   git clone <your-repo-url>
-   cd portfolio-site
-   ```
-2. **Create and activate a virtual environment**
-    ```sh
-    python -m venv venv
-    source venv/bin/activate
-    ```
-3. **Install dependencies**
-    ```sh
-    pip install -r requirements.txt
-    ```
-4. **Run the Flask app**
-    ```sh
-    flask run
-    ```
-
-## Deployment
-For production, use [Gunicorn](https://gunicorn.org/) as the WSGI server:
-```sh
-gunicorn -w 4 app:app
-```
+- **Python 3**
+- **Flask** (web framework)
+- **Jinja2** (templating)
+- **Tailwind CSS** (utility-first CSS framework, via CDN)
+- **HTML5**
+- **CSS3**
+- **Gunicorn** (for production WSGI serving)

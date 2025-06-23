@@ -1,6 +1,33 @@
 {% extends "base.html" %}
 {% block title %}Contact - Portfolio{% endblock %}
 {% block content %}
-<h1 class="text-3xl font-bold mb-4">Contact</h1>
-<p class="text-lg">Want to get in touch? Email me at <a href="mailto:your@email.com" class="text-blue-600 underline">your@email.com</a>.</p>
+<section class="max-w-2xl mx-auto py-20">
+    <h1 class="text-4xl font-extrabold text-gray-100 mb-8 text-center">Connect with Me</h1>
+    <p class="text-lg text-gray-300 mb-10 text-center">
+        I love meeting new people and exploring new ideas.<br>
+        Find me on your favorite platform or send a message!
+    </p>
+    <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-6 mb-12">
+        <a href="mailto:andrew@example.com" class="flex items-center gap-3 px-6 py-4 bg-gray-800/90 rounded-xl shadow hover:bg-yellow-400/20 transition text-gray-100 hover:text-yellow-400 font-semibold text-lg" target="_blank">
+            <svg class="w-6 h-6 text-yellow-400" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 8l7.89 5.26a2 2 0 0 0 2.22 0L21 8M5 19h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2z"/></svg>
+            Email
+        </a>
+        <a href="https://github.com/ArpyClarkson" class="flex items-center gap-3 px-6 py-4 bg-gray-800/90 rounded-xl shadow hover:bg-yellow-400/20 transition text-gray-100 hover:text-yellow-400 font-semibold text-lg" target="_blank">
+            <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.58 2 12.26c0 4.48 2.87 8.28 6.84 9.63.5.09.68-.22.68-.48 0-.24-.01-.87-.01-1.7-2.78.62-3.37-1.36-3.37-1.36-.45-1.18-1.1-1.5-1.1-1.5-.9-.63.07-.62.07-.62 1 .07 1.53 1.06 1.53 1.06.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.37-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.74-.1-.26-.45-1.3.1-2.7 0 0 .84-.28 2.75 1.04A9.36 9.36 0 0 1 12 6.84c.85.004 1.71.12 2.51.35 1.91-1.32 2.75-1.04 2.75-1.04.55 1.4.2 2.44.1 2.7.64.71 1.03 1.62 1.03 2.74 0 3.94-2.34 4.81-4.57 5.07.36.32.68.94.68 1.9 0 1.37-.01 2.47-.01 2.81 0 .27.18.58.69.48C19.13 20.54 22 16.74 22 12.26 22 6.58 17.52 2 12 2z"/></svg>
+            GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/andrewlangel/" class="flex items-center gap-3 px-6 py-4 bg-gray-800/90 rounded-xl shadow hover:bg-yellow-400/20 transition text-gray-100 hover:text-yellow-400 font-semibold text-lg" target="_blank">
+            <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-9h3v9zm-1.5-10.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm15.5 10.28h-3v-4.5c0-1.08-.02-2.47-1.5-2.47-1.5 0-1.73 1.17-1.73 2.39v4.58h-3v-9h2.89v1.23h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v4.72z"/></svg>
+            LinkedIn
+        </a>
+        <a href="https://twitter.com/arpyclarkson" class="flex items-center gap-3 px-6 py-4 bg-gray-800/90 rounded-xl shadow hover:bg-yellow-400/20 transition text-gray-100 hover:text-yellow-400 font-semibold text-lg" target="_blank">
+            <svg class="w-6 h-6 text-yellow-400" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.56c-.89.39-1.85.65-2.86.77a4.93 4.93 0 0 0 2.16-2.72c-.95.56-2.01.97-3.13 1.19a4.92 4.92 0 0 0-8.39 4.48c-4.09-.2-7.72-2.17-10.15-5.15a4.93 4.93 0 0 0-.67 2.48c0 1.71.87 3.22 2.19 4.1-.81-.03-1.57-.25-2.24-.62v.06c0 2.39 1.7 4.39 3.95 4.84-.41.11-.85.17-1.3.17-.32 0-.62-.03-.92-.08.62 1.94 2.42 3.36 4.55 3.4a9.87 9.87 0 0 1-6.1 2.1c-.4 0-.79-.02-1.18-.07a13.94 13.94 0 0 0 7.56 2.21c9.05 0 14-7.5 14-14 0-.21 0-.42-.02-.63A9.93 9.93 0 0 0 24 4.56z"/></svg>
+            Twitter/X
+        </a>
+        <!-- Add more social links as needed -->
+    </div>
+    <div class="text-center text-gray-400 text-sm">
+        Or just email me directly: <a href="mailto:andrew@example.com" class="text-yellow-400 hover:underline">andrew@example.com</a>
+    </div>
+</section>
 {% endblock %}
